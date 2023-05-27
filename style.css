@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Sriracha', sans-serif;
+    --fonte3: 'Passion One', cursive;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: orange;
+    font-family: var(--fonte1);
+}
+header {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte1);
+    text-align: center;
+    padding: 50px 0px;
+}
+
+header h1 {
+    font: normal bold 4em var(--fonte3);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header a, footer a {
+    font: normal bold 1.1em var(--fonte1);
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh 0px;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: rgba(0, 0, 0, 0.400);
+    color: white;
+    box-shadow: inset 0px 1px 7px rgba(0, 0, 0, 0.500);
+}
+
+section#i1 {
+    background: orange url('imagens/background001.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+section#i2 {
+    background: orange url('imagens/background002.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+main pre {
+    white-space: pre-line;
+    font: normal normal 3.5vw var(--fonte2)
+}
+
+pre.image {
+    display: inline-block;
+    background-color: hsla(0, 0%, 0%, 0.600);
+    padding: 10px;
+}
+
+footer {
+    font-family: var(--fonte1);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
